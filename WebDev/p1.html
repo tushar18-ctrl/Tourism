@@ -1,28 +1,107 @@
-<html>
-<head><h1 align="center">Student ID Creation</h1></head>
-<title>Program 2</title>
-<form align="center">
-<input type="text" name="name1" placeholder="Enter first name"><br/>
-<input type="text" name="name2" placeholder="Enter last name"><br/>
-<h3>Select your gender:</h1>
-<input type="radio" name="GENDER" value="M">Male
-<input type="radio" name="GENDER" value="F">Female
-<h3>Select Subject for enrollment:</h3>
-<input type="checkbox" name="subject" value="EAA">EAA
-<input type="checkbox" name="subject" value="Coding">PDS
-<input type="checkbox" name="subject" value="Linear Alg">LA
-<h3>Language proficiency:<h3>
-<input type="checkbox" name="lang" value="ENGLISH">ENG
-<input type="checkbox" name="lang" value="HINDI">HINDI
-<h4>Contact & Personal Particulars:</h4>
-<input type="text" name="CP" placeholder="Enter your DOB(dd-mm-yyyy)"></br>
-<input type="text" name="CP" placeholder="Enter your contact no."></br>
-<input type="text" name="CP" placeholder="Enter your address"></br>
-<input type="text" name="CP" placeholder="Enter your Area PINCODE"></br>
-<input type="text" name="CP" placeholder="Enter your State"></br>
-<input type="text" name="CP" placeholder="Enter your country"></br>
-<button type="submit">Submit</button>
-  <button type="reset">Reset</button><button type="submit">Submit</button>
-  <button type="reset">Reset</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #b3e0ff, #66b3ff); /* Light blue gradient */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        input, button {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+
+        input {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+
+        button {
+            background: #007acc;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005f99;
+        }
+
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group input, .radio-group input {
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student ID Creation</h1>
+        
+        <form>
+            <input type="text" name="name1" placeholder="Enter First Name" required><br/>
+            <input type="text" name="name2" placeholder="Enter Last Name" required><br/>
+
+            <h3>Select Your Gender:</h3>
+            <div class="radio-group">
+                <input type="radio" name="GENDER" value="M"> Male
+                <input type="radio" name="GENDER" value="F"> Female
+            </div>
+
+            <h3>Select Subject for Enrollment:</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="subject" value="EAA"> EAA
+                <input type="checkbox" name="subject" value="Coding"> PDS
+                <input type="checkbox" name="subject" value="Linear Alg"> LA
+            </div>
+
+            <h3>Language Proficiency:</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="lang" value="ENGLISH"> English
+                <input type="checkbox" name="lang" value="HINDI"> Hindi
+            </div>
+
+            <h4>Contact & Personal Particulars:</h4>
+            <input type="text" name="DOB" placeholder="Enter your DOB (dd-mm-yyyy)" required><br/>
+            <input type="text" name="contact" placeholder="Enter your Contact No." required><br/>
+            <input type="text" name="address" placeholder="Enter your Address"><br/>
+            <input type="text" name="pincode" placeholder="Enter your Area PINCODE"><br/>
+            <input type="text" name="state" placeholder="Enter your State"><br/>
+            <input type="text" name="country" placeholder="Enter your Country"><br/>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+</body>
+</html>
