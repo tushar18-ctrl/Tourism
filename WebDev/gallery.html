@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warangal Tourism Gallery</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f9ff; /* Light background */
+            color: #333;
+        }
+
+        header {
+            background-color: #4682b4; /* Steel blue */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Gallery Item Styling */
+        .gallery-item {
+            flex: 1 1 calc(30% - 20px); /* Top row: 3 items */
+            max-width: calc(30% - 20px);
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            background-color: #f0f8ff; /* Subtle light blue shade */
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Bottom row with larger items */
+        .gallery-row:last-child .gallery-item {
+            flex: 1 1 calc(45% - 20px);
+            max-width: calc(45% - 20px);
+        }
+
+        /* Additional Styling */
+        .gallery-item:hover::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(70, 130, 180, 0.1); /* Steel blue overlay */
+            inset: 0;
+            z-index: 1;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #4682b4; /* Steel blue */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Warangal Tourism Gallery</h1>
+        <p>Explore the beauty of Warangal through these captivating images.</p>
+    </header>
+
+    <div class="gallery-container">
+        <!-- Top Row: 3 Images -->
+        <div class="gallery-item">
+            <img src="Z:\gellery\bogatha-waterfalls.jpg" alt="Warangal Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="Z:\gellery\Feature-Image-_-Warangal-1.jpg" alt="Warangal Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="Z:\gellery\fort_warangal.jpg" alt="Warangal Image 3">
+        </div>
+
+        <!-- Bottom Row: 2 Images -->
+        <div class="gallery-item">
+            <img src="Z:\gellery\images.jfif" alt="Warangal Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="Z:\gellery\tourism laknavaram.jpg" alt="Warangal Image 5">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Warangal Tourism. All rights reserved.</p>
+    </footer>
+</body>
+</html>

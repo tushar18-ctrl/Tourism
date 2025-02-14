@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            <!-- background: url('https://source.unsplash.com/1920x1080/?technology,abstract') no-repeat center center/cover; -->
+            font-family: 'Arial', sans-serif;
+        }
+        .calculator {
+    background: linear-gradient(135deg, #00aaff, #0077cc); /* Blue gradient */
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 320px;
+}
+
+
+.calculator button {
+    background: rgba(50, 50, 50, 0.8); /* Buttons retain the previous style */
+}
+/* Optional: If you want to apply a more distinct color to the background */
+.calculator {
+    background-color: #f1f1f1; /* Replace with your preferred color */
+}
+
+
+        .calculator input {
+            width: 100%;
+            height: 60px;
+            font-size: 1.8em;
+            text-align: right;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #333;
+            box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            cursor: pointer;
+            background: rgba(50, 50, 50, 0.8);
+            color: white;
+            border-radius: 50%;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: rgba(30, 30, 30, 0.9);
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+        button:nth-child(1) {
+            background: rgba(255, 59, 48, 0.8);
+        }
+        button:nth-child(1):hover {
+            background: rgba(211, 47, 47, 0.9);
+        }
+        button:nth-child(4n) {
+            background: rgba(255, 149, 0, 0.8);
+        }
+        button:nth-child(4n):hover {
+            background: rgba(224, 123, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button>C</button>
+            <button>/</button>
+            <button>*</button>
+            <button>-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>=</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+        </div>
+    </div>
+</body>
+</html>
