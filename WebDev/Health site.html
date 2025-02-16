@@ -1,32 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>WannaBeFit</title>
-<div style="background-color: lightblue; padding: 5px;">
-  <h2>WannaBeFit</h2>
-</div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANNA BE FIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffefd5, #ffe4b5);
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(to right, #87CEFA, #00BFFF);
+            padding: 20px;
+            text-align: left;
+            padding-left: 50px;
+        }
+        .header h1 {
+            color: black;
+            margin: 0;
+            font-size: 32px;
+            font-family: 'Brush Script MT', cursive;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .meal {
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 250px;
+        }
+        .meal:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .meal img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            object-fit: cover;
+        }
+        .meal img:hover {
+            transform: scale(1.1);
+        }
+        .meal h2 {
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-<img src="Z:\value-prop-2.webp" height="250" width="250">
-<img src="Z:\value-prop-3.webp" height="250" width="250" align="right">
-<table align="center">
-<tr>
-<th>BREAKFAST</th>
-<th>LUNCH</th>
-<th>DINNER</th>
-</tr>
-
-<tr>
-<th>Russian Salad</th>
-<th>White Sauce Pasta</th>
-<th>Cheese N Beans</th>
-</tr>
-
-<tr>
-<th><a href="file:///Z:/WebDev/russian%20salad.html"><img src="https://github.com/tushar18-ctrl/Tourism/raw/refs/heads/main/WebDev/webdevs/ChickenPasta1.webp"></a></th>
-<th><a href="file:///Z:/white%20sauce%20pasta.html"><img src="C:\Users\24csb1a70\Downloads\images (3).jfif"></a></th>
-<th><a href="file:///Z:/WebDev/white%20sauce%20pasta.html"><img src="Z:\beans-and-cheese-on-toast.jpg" height="225" width="225"></th>
-</tr>
-
-</table>
+    <div class="header">
+        <h1>WANNA BE FIT</h1>
+    </div>
+    <div class="container">
+        <div class="meal">
+            <a href="#" target="_blank"><img src="breakfast.jpg" alt="Breakfast"></a>
+            <h2>Breakfast</h2>
+        </div>
+        <div class="meal">
+            <a href="#" target="_blank"><img src="lunch.jpg" alt="Lunch"></a>
+            <h2>Lunch</h2>
+        </div>
+        <div class="meal">
+            <a href="#" target="_blank"><img src="dinner.jpg" alt="Dinner"></a>
+            <h2>Dinner</h2>
+        </div>
+    </div>
 </body>
 </html>
